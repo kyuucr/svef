@@ -105,7 +105,7 @@ class NALU:
 
 		def isControlNALU(self):
 				"This object is a control NALU (i.e. type 6 or 14)?"
-				return self.length <= 20 and self.length > 0
+				return self.length <= 9 and self.length > 0
 
 		def isGOPHead(self):
 				"This object is at the beginning of a GOP?"
